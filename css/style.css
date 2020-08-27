@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-gradient(linear, left top, right top, color-stop(36%, #96733b), to(#6d3f19));
+  background: linear-gradient(90deg, #96733b 36%, #6d3f19 100%);
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+button {
+  outline: none;
+  background-color: white;
+  border: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+i {
+  pointer-events: none;
+}
+
+.container {
+  min-width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6em;
+}
+
+.query {
+  margin-bottom: 2em;
+}
+
+.title {
+  text-align: center;
+  padding: 1em;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list {
+  min-width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+select {
+  outline: none;
+  border: none;
+  padding-right: .2em;
+  color: #dba239;
+  font-size: 1.2rem;
+  position: relative;
+  left: .5em;
+}
+
+.title {
+  -webkit-animation-name: boing;
+          animation-name: boing;
+}
+
+@-webkit-keyframes boing {
+  0% {
+    font-size: 2.5rem;
+  }
+  25% {
+    font-size: 2.75rem;
+  }
+  50% {
+    font-size: 2.4rem;
+  }
+  70% {
+    font-size: 2.2rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes boing {
+  0% {
+    font-size: 2.5rem;
+  }
+  25% {
+    font-size: 2.75rem;
+  }
+  50% {
+    font-size: 2.4rem;
+  }
+  70% {
+    font-size: 2.2rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+
+form input,
+form button {
+  outline: none;
+  border: none;
+  background: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+form button {
+  cursor: pointer;
+  color: orange;
+}
+
+form button:hover {
+  background-color: orange;
+  color: white;
+}
+
+.todo {
+  width: 100%;
+  background-color: white;
+  margin: .2em;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.todoTask {
+  padding-left: .5em;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.complete,
+.delete {
+  font-size: 1.5rem;
+  padding: .4em;
+  color: white;
+  cursor: pointer;
+}
+
+.complete {
+  background-color: #00ac00;
+}
+
+.complete:hover {
+  background-color: #027902;
+}
+
+.delete {
+  background-color: #ff2525;
+}
+
+.delete:hover {
+  background-color: #a80000;
+}
+
+.been-checked {
+  background-color: #9b9999;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */

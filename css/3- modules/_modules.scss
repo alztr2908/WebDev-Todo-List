@@ -1,0 +1,83 @@
+.title {
+  animation-name: boing;
+  // animation-duration: 4s;
+  // animation-iteration-count: infinite;
+}
+
+@keyframes boing {
+  0%   {font-size: 2.5rem}
+  25%  {font-size: 2.75rem}
+  50%  {font-size: 2.4rem}
+  70%  {font-size: 2.2rem}
+  100% {font-size: 2.5rem}
+}
+
+form input,
+form button{
+  outline: none;
+  border: none;
+  background: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+form button {
+  cursor: pointer;
+  color: orange;
+}
+
+form button:hover {
+  background-color: orange;
+  color: white;
+}
+
+// Javascript here
+
+.todo {
+  width: 100%;
+  background-color: white;
+  margin: .2em;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+.todoTask {
+  padding-left: .5em;
+  flex: 2;
+}
+
+.complete,
+.delete {
+  font-size: 1.5rem;
+  padding: .4em;
+  color: white;
+  cursor: pointer;
+}
+
+.complete {
+  background-color: rgb(0, 172, 0);
+}
+
+.complete:hover {
+  background-color: rgb(2, 121, 2);
+}
+
+.delete {
+  background-color: rgb(255, 37, 37);
+}
+
+.delete:hover {
+  background-color: rgb(168, 0, 0);
+}
+
+//State
+.been-checked {
+  background-color: rgb(155, 153, 153);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
